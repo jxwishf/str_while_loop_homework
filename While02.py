@@ -1,8 +1,10 @@
+import string
+
 def main(s):
     a = 0
     i = 0
     while i < len(s):
-        if s[i].isalpha():
+        if s[i] in string.punctuation:
             a += 1
         i += 1
     """
@@ -13,4 +15,4 @@ def main(s):
         int: return answer
     """
     return a
-print(main("python 2022"))
+print(main("python $%^&* 2022"))
