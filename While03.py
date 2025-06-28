@@ -1,4 +1,12 @@
+import string
+
 def main(s):
+    a = 0
+    i = 0
+    while i < len(s):
+        if s[i] in string.punctuation:
+            a += 1
+        i += 1
     """
     A variable of type str is given. Find how many punctuations it contains and return.
     Args:
@@ -6,4 +14,5 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    return a
+print(main("python %^&^%$ 2022"))
