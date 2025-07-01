@@ -1,4 +1,10 @@
 def main(s):
+    a = 0
+    i = 0
+    while i < len(s):
+        if s[i].isdigit():
+            a += int(s[i])
+        i += 1
     """
     A string of numbers is given. Find the sum of all the digits and return.
     Args:
@@ -6,4 +12,6 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    return a
+
+print(main("123abc456")) 
